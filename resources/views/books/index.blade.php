@@ -1,5 +1,10 @@
+@extends('layouts.layouts')
+
+
+@section('content')
+
 <h1>家計簿</h1>
-<table>
+<table class="table">
   <tr>
     <th>年月</th>
     <th>区分</th>
@@ -15,3 +20,4 @@
   </tr>
   @endforeach
 </table>
+@endsection
