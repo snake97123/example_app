@@ -23,4 +23,6 @@
 </tr>
 
 </table>
+
+<a href="{{route('books.index')}}" class="btn btn-secoundary">戻る</a>
 @endsection
