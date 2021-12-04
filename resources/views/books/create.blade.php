@@ -50,6 +50,7 @@
    </div>
 
    <button type="submit" class="btn btn-primary">送信</button>
+   <a href="{{route('books.index')}}" class="btn btn-secondary">戻る</a>
   </form>
 
 @endsection
