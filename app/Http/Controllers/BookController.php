@@ -23,4 +23,18 @@ class BookController extends Controller
     {
       return view("books.create");
     }
+
+    public function store(Request $request)
+    {
+      $book = new Book();
+      $book->inout = $request->input("inout");
+      $book->year = $request->input("year");
+      $book->month = $request->input("month");
+      $book->category = $request->input("category");
+      $book->amount = $request->input("amount");
+      $book->save();
+
+      return redirect()->route("books.show", $book);
+    }
 }
+
