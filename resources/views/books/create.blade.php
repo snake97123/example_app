@@ -49,7 +49,7 @@
      <input type="number" name="amount" id="product-name" class="form-control">
    </div>
 
-   <button type="submit" class="btn btn-primary"></button>
+   <button type="submit" class="btn btn-primary">送信</button>
   </form>
 
 @endsection
