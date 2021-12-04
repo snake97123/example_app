@@ -36,5 +36,9 @@ class BookController extends Controller
 
       return redirect()->route("books.show", $book);
     }
+    public function edit(Book $book)
+    {
+      return view("books.edit", compact("book"));
+    }
 }
 
