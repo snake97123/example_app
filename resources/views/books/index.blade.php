@@ -23,6 +23,10 @@
     <td>
       <a href="{{route('books.edit', $book)}}" class="btn btn-danger">編集</a>
      <a href="{{route('books.show', $book)}}" class="btn btn-info">詳細</a>
+     <form action="/books/{{$book->id}}" method="POST" style="display:inline">
+       @method("DELETE")
+       <button type="submit" class="btn btn-danger" onclick='return confirm("本当に削除しますか?");'>削除</button>
+    </form>
     </td>
     
   </tr>
