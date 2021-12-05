@@ -19,7 +19,12 @@
     <td>{{ $book->inout}}</td>
     <td>{{ $book->category}}</td>
     <td>{{ $book->amount }}万円</td>
-    <td><a href="{{route('books.show', $book)}}" class="btn btn-info">詳細</a></td>
+    
+    <td>
+      <a href="{{route('books.edit', $book)}}" class="btn btn-danger">編集</a>
+     <a href="{{route('books.show', $book)}}" class="btn btn-info">詳細</a>
+    </td>
+    
   </tr>
   @endforeach
 </table>
